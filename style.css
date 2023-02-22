@@ -47,8 +47,8 @@ body
 .skills
 {
     text-align: center;
-    padding-top: 170px;
-    margin-bottom: 70px;
+    padding-top: 190px;
+    margin-bottom: 30px;
 }
 
 .card 
@@ -62,6 +62,7 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 20px;
 }
 
 .center
@@ -74,4 +75,18 @@ body
 .card:hover 
 {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+@media (max-width: 500px) {
+    .center{
+        display:inline-block;
+        height:100%;
+        vertical-align:middle;
+    }
+    .card{
+        width: 50%;
+        margin: auto;
+        height: 200px;
+        margin-bottom: 30px;
+    }
 }
