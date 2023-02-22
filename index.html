@@ -84,11 +84,27 @@
         </div>
     </div>
 <!--Here is where we are going to place a contact me form for employment opportunities.-->
-    <div>
-        <div class="card">
+    <div class="ContactCardCenter">
+        <div class="ContactCard">
             <div>
                 <h3>Contact Me!</h3>
-                
+                <form method="post" action="ContactMe.php">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email" required>
+
+                    <label for="subject">Subject:</label>
+                    <input type="text" name="subject" id="subject" required>
+
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" cols="30" rows="8" required></textarea>
+
+                    <br>
+
+                    <button>Send</button>
+                </form>
             </div>
         </div>
     </div>
