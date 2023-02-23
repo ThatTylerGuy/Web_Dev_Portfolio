@@ -106,24 +106,42 @@ body
     display: flex;
     background-color: #3d3d3d;
     color: white;
+    font-size: 18px;
 }
 #email
 {
     display: flex;
     background-color: #3d3d3d;
     color: white;
+    font-size: 18px;
 }
 #subject
 {
     display: flex;
     background-color: #3d3d3d;
     color: white;
+    font-size: 18px;
 }
 #message
 {
     display: flex;
     background-color: #3d3d3d;
     color: white;
+    font-size: 18px;
+}
+.button
+{
+    background-color: #3d3d3d;
+    color: white;
+    font-size: 18px;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+.button:hover
+{
+    background-color: #fff;
+    color: black
 }
 
 @media (max-width: 500px) {
