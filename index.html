@@ -88,25 +88,40 @@
         <div class="ContactCard">
             <div>
                 <h3>Contact Me!</h3>
-                <form method="POST" action="ContactMe.php">
+                <form method="POST" onsubmit="sendEmail(); reset(); return false;">
                     <label for="name">Name: </label>
                     <input type="text" name="name" id="name" required>
 
                     <label for="email">Email:</label>
                     <input type="text" name="email" id="email" required>
 
-                    <label for="subject">Subject:</label>
-                    <input type="text" name="subject" id="subject" required>
-
                     <label for="message">Message:</label>
                     <textarea name="message" id="message" cols="30" rows="8" required></textarea>
 
                     <br>
 
-                    <button class="button">Send</button>
+                    <button class="button" type="submit">Send</button>
                 </form>
             </div>
         </div>
     </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "tylercurtis098@gmail.com",
+                Password : "AD574AEDB29B8C97AD298848F4651CDB9E23",
+                //132f4858-f989-4cab-b697-84bbc866860f
+                //SecureToken : "132f4858-f989-4cab-b697-84bbc866860f"
+                To : 'tylercurtis098@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "New Contact Form Enquiry",
+                Body : "And this is the body"
+            }).then(
+            message => alert(message)
+            );
+        }
+    </script>
 </body>
 </html>
