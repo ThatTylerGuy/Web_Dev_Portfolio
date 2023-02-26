@@ -113,7 +113,8 @@
                 From : 'tylercurtis098@gmail.com',
                 To : 'tylercurtis098@gmail.com',
                 Subject : "New Contact Form Enquiry",
-                Body : document.getElementById("message", "email").value, 
+                Body : document.getElementById("message").value,
+                Body : document.getElementById("email").value
             }).then(
             message => alert(message)
             );
