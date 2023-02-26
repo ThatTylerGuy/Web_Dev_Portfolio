@@ -112,11 +112,10 @@
                 SecureToken : "d042680b-afd5-45da-82af-1510d0fa4603",
                 From : 'tylercurtis098@gmail.com',
                 To : 'tylercurtis098@gmail.com',
-                Subject : "New Contact Form Enquiry",
+                Subject : "New Contact From " document.getElementById("email"),
                 Body : document.getElementById("message").value,
-                Body : document.getElementById("email").value
             }).then(
-            message => alert(message)
+            message => alert("Thank you for contacting me! I will reach out to you as soon as I can!")
             );
         }
     </script>
