@@ -53,8 +53,8 @@ body
 
 .card 
 {
-    width: 300px;
-    height: 200px;
+    width: 500px;
+    height: 300px;
     border-radius: 20px;
     padding: 5px;
     box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
@@ -63,7 +63,18 @@ body
     justify-content: center;
     align-items: center;
     margin: 20px;
+    text-align: center;
 }
+
+.card p{
+    font-size: 24px;
+}
+
+.card h3{
+    font-size: 32px;
+}
+
+
 
 .center
 {
@@ -156,8 +167,14 @@ body
         height: 200px;
         margin-bottom: 30px;
     }
+    .card p{
+        font-size: 16px;
+    }
+    .card h3{
+        font-size: 24px;
+    }
     .ContactCard{
-        width: 325px;
+        width: 340px;
     }
     .ContactCardCenter{
         display:flex;
