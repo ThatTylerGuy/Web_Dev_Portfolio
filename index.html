@@ -112,7 +112,7 @@
                 SecureToken : "d042680b-afd5-45da-82af-1510d0fa4603",
                 From : 'tylercurtis098@gmail.com',
                 To : 'tylercurtis098@gmail.com',
-                Subject : "New Contact From " document.getElementById("email"),
+                Subject : "New Contact From " + document.getElementById("email"),
                 Body : document.getElementById("message").value,
             }).then(
             message => alert("Thank you for contacting me! I will reach out to you as soon as I can!")
