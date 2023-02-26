@@ -110,10 +110,10 @@
         function sendEmail(){
             Email.send({
                 SecureToken : "d042680b-afd5-45da-82af-1510d0fa4603",
+                From : 'tylercurtis098@gmail.com',
                 To : 'tylercurtis098@gmail.com',
-                From : document.getElementById("email").value,
                 Subject : "New Contact Form Enquiry",
-                Body : document.getElementById("message").value
+                Body : document.getElementById("message", "email").value, 
             }).then(
             message => alert(message)
             );
