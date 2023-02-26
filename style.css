@@ -101,14 +101,14 @@ body
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-#name
+#fullName
 {
     display: flex;
     background-color: #3d3d3d;
     color: white;
     font-size: 18px;
 }
-#email
+#email_id
 {
     display: flex;
     background-color: #3d3d3d;
