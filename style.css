@@ -155,6 +155,15 @@ body
     color: black
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+a:visited{
+    color: white;
+}
+  
+
 @media (max-width: 500px) {
     .center{
         display:inline-block;
